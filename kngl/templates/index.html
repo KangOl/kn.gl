@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Christophe Simonis, aka KangOl, aka kngl</title>
+
+    <!--link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css" rel="stylesheet"-->
+    <link href="//netdna.bootstrapcdn.com/bootswatch/2.1.1/simplex/bootstrap.min.css" rel="stylesheet">
+
+    <!--
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome-ie7.css" rel="stylesheet">
+    -->
+
+    <link href="/static/kngl-font/style.css" rel="stylesheet">
+    <!--[if lte IE 7]><script src="/static/kngl-font/lte-ie7.js"></script><![endif]-->
+
+    <link href="/static/kngl.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!--script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script-->
+</head>
+<body>
+    <div id="main">
+
+    <h1>Christophe Simonis, <small>aka</small> KangOl, <small>aka</small> kngl</h1>
+    <hr>
+
+    <div class="container">
+    {% for category, services in services_by_category %}
+        <h2>{{ category.name }}</h2>
+        <ul class="thumbnails {{ category.code }}">
+        {% set x = 0 %}
+        {% for row in services | rowify(4) %}
+            {% set x = 12 / row|length if x == 0 %}
+        {% for service in row %}
+            <li class="span{{ x|int }}">
+                <div class="thumbnail">
+                    <p><a href="{{ service.link }}" class="pull-right"><i class="icon-external-link"></i></a></p>
+                    <div class="thumb-icon" aria-hidden="true" data-icon="{{ service.icon_char | e }}" data-service="{{ service.name }}"></div>
+                    <span>{{ service.name }}</span>
+                </div>
+            </li>
+        {% endfor %}
+        {% endfor %}
+        </ul>
+    {% endfor %}
+
+    </div>
+    </div>
+    <div id="details" class="container"></div>
+
+    <div id="footer">
+        <div id="credit" class="container">
+            <a href="https://github.com/KangOl/kn.gl">Source code not yet available on github <i class="icon-external-link"></i></a> | About the font
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        jQuery(function($) {
+            var $target = $('#details');
+            var duration = 300;
+            $('[data-service]').on('click', function() {
+                var $me = $(this);
+                var service = $me.data('service');
+                if ($target.data('current') === service) {
+                    $target.slideUp(duration);
+                    $target.data('current', '');
+                } else {
+                    if (!$target.is(':visible')) {
+                        $target.slideDown(duration);
+                    }
+                    $target.text("gettting info about " + service);
+                    $target.data('current', service);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

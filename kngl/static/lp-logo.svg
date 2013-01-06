@@ -1,0 +1,30 @@
+<svg width="19" height="21" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata86">image/svg+xmlimage/svg+xml</metadata>
+ <defs>
+  <style type="text/css">.fil0 {fill:#F8C300}
+    .fil6 {fill:#3895BD}
+    .fil3 {fill:#3941BF}
+    .fil1 {fill:#8FB635}
+    .fil4 {fill:#A02C35}
+    .fil7 {fill:#BB3A84}
+    .fil5 {fill:#D18C3B}
+    .fil8 {fill:#72706F;fill-rule:nonzero}
+    .fil9 {fill:#F8C300;fill-rule:nonzero}
+    .fil2 {fill:white;fill-rule:nonzero}</style>
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" transform="matrix(0.816018 0 0 0.816018 -63.0501 -69.7562)" id="g3473">
+   <g id="g3489">
+    <path fill="#3895bd" fill-rule="evenodd" id="path3475" d="m88.04258,85.483658l-9.929001,5.725204l4.764999,2.756592l5.151001,-2.968597l0.013,-5.513199z"/>
+    <path fill="#8fb635" fill-rule="evenodd" id="path3477" d="m89.72657,85.483658l0,5.513199l5.151001,2.968597l4.777008,-2.756592l-9.928009,-5.725204z"/>
+    <path fill="#f8c300" fill-rule="evenodd" id="path3479" d="m88.878578,92.456146l-5.152008,2.968704l0,5.962509l5.152008,2.955994l5.151001,-2.955994l0,-5.962509l-5.151001,-2.968704z"/>
+    <path fill="#d18c3b" fill-rule="evenodd" id="path3481" d="m100.490578,92.668259l-4.776993,2.768997l0,5.937088l4.776993,2.757004l0,-11.463089z"/>
+    <path fill="#3941bf" fill-rule="evenodd" id="path3483" d="m77.265572,92.680756l0,11.450592l4.777008,-2.757004l0,-5.949493l-4.777008,-2.744095z"/>
+    <path fill="#bb3a84" fill-rule="evenodd" id="path3485" d="m82.878578,102.834351l-4.764999,2.755997l9.916,5.738007l0,-5.513l-5.139008,-2.981003l-0.011993,0z"/>
+    <path fill="#a02c35" fill-rule="evenodd" id="path3487" d="m94.877571,102.846359l-5.151001,2.968994l0,5.513l9.916016,-5.738007l-4.765015,-2.743988z"/>
+   </g>
+  </g>
+ </g>
+</svg>

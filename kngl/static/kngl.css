@@ -1,0 +1,53 @@
+
+#footer {
+    clear: both;
+    width: 100%;
+    height: 2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #555;
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 0.75em;
+    padding-top: 0.5em;
+    z-index: 1000;
+}
+
+#details {
+    display: none;
+    bottom: 2.5em;
+    position: fixed;
+    background-color: #ddd;
+    height: 3em;
+
+    /* center */
+    left: 50%;
+    margin-left: -470px;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.thumb-icon {
+    font-size: 36px;
+    padding-left: 16px;
+}
+
+.thumb-icon:hover {
+    color: #029ACF;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+#credit {
+    //padding: 20px 0;
+}
+
+
+
